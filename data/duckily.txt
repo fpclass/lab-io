@@ -1,0 +1,5 @@
+Grandduck=Grand duckster
+Baby duck=Parent duck
+Duckling=Older duckling
+Parent duck=Grandduck
+Duck Vader=Grand duckster

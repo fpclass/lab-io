@@ -1,0 +1,44 @@
+name:                lab-io
+version:             0.1.0.0
+github:              "fpclass/lab-io"
+license:             MIT
+author:              "Michael B. Gale"
+maintainer:          "m.gale@warwick.ac.uk"
+copyright:           "2020 Michael B. Gale"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/fpclass/lab-io#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- strict
+
+library:
+  source-dirs: src
+
+tests:
+  lab-io-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - lab-io
+    - tasty
+    - tasty-hunit
+    - tasty-quickcheck
+    - extra
+    - directory
+    - strict
