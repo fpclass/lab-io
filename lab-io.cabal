@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 3f2b8c5014890d07c52ed2a21ed05fda086a49e003492d5afc86c907495aadc3
+-- hash: a693629181a0ea05598e36940f480f050eea2c0c6ad8ecb01a86b8be0f8ee588
 
 name:           lab-io
 version:        0.1.0.0
@@ -19,7 +19,6 @@ license-file:   LICENSE
 build-type:     Simple
 extra-source-files:
     README.md
-    ChangeLog.md
 
 source-repository head
   type: git
@@ -44,7 +43,7 @@ test-suite lab-io-test
       Paths_lab_io
   hs-source-dirs:
       test
-  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  ghc-options: -threaded -rtsopts
   build-depends:
       base >=4.7 && <5
     , directory
